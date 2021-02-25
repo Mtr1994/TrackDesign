@@ -187,3 +187,8 @@ LIBS += -LD:/VTK9_0_1/lib_release \
 -lvtkWrappingTools-9.0 \
 -lvtkzlib-9.0
 
+RESOURCES += \
+    res.qrc
+
+RC_ICONS = icon.ico
+

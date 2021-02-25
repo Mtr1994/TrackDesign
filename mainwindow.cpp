@@ -26,7 +26,7 @@ MainWindow::~MainWindow()
 void MainWindow::init()
 {
     QRect rect = QGuiApplication::screens().at(0)->availableGeometry();
-    resize(rect.width() * 0.6, rect.height() * 0.8);
+    resize(rect.width() * 0.6, rect.height() * 0.72);
 
     ui->widgetViewContainer->setVisible(false);
 

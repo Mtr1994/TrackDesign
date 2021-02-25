@@ -1,4 +1,4 @@
-#include "mainwindow.h"
+﻿#include "mainwindow.h"
 
 #include <QApplication>
 #include <vtkPolyData.h>
@@ -7,7 +7,7 @@
 int main(int argc, char *argv[])
 {
     // 设置环境变量
-    qputenv("GDAL_DATA", "/usr/share/gdal");
+    qputenv("GDAL_DATA", "D:/GDAL/GDAL232/data");
     QApplication a(argc, argv);
 
     qRegisterMetaType<vtkSmartPointer<vtkPolyData>>("vtkSmartPointer<vtkPolyData>");
