@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>WidgetOpenGL</class>
+ <widget class="QWidget" name="WidgetOpenGL">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1082</width>
+    <height>977</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <widget class="QVTKOpenGLNativeWidget" name="widget" native="true">
+     <layout class="QGridLayout" name="gridLayout_2">
+      <item row="0" column="0">
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>914</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item row="0" column="1">
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <property name="spacing">
+         <number>24</number>
+        </property>
+        <item>
+         <widget class="QPushButton" name="btnExport">
+          <property name="styleSheet">
+           <string notr="true">QPushButton
+{
+	min-width: 	5em;
+    min-height:  2.4em;
+    border: 1px solid #95acc2;
+    border-radius: 0.1em;
+    padding-left: 1em;
+    padding-right: 1em;
+    color: #fefefe;
+    background-color: #5595acc2;
+}
+
+QPushButton:hover
+{
+    background-color: #55f0f0f0;
+}
+
+QPushButton:pressed
+{
+    background-color: #5595acc2
+}</string>
+          </property>
+          <property name="text">
+           <string>导出轨迹</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="btnReload">
+          <property name="styleSheet">
+           <string notr="true">QPushButton
+{
+	min-width: 	5em;
+    min-height:  2.4em;
+    border: 1px solid #95acc2;
+    border-radius: 0.1em;
+    padding-left: 1em;
+    padding-right: 1em;
+    color: #fefefe;
+    background-color: #5595acc2;
+}
+
+QPushButton:hover
+{
+    background-color: #55f0f0f0;
+}
+
+QPushButton:pressed
+{
+    background-color: #5595acc2
+}</string>
+          </property>
+          <property name="text">
+           <string>切换地形</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item row="1" column="1">
+       <spacer name="verticalSpacer">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>820</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QVTKOpenGLNativeWidget</class>
+   <extends>QWidget</extends>
+   <header location="global">QVTKOpenGLNativeWidget.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
